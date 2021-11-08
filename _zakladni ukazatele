@@ -1,8 +1,0 @@
-
-let
-    Zdroj = Table.Combine({#"zakladni ukazatele - nove", #"zakladni ukazatele - historicke"}),
-    #"Sloučené dotazy" = Table.NestedJoin(Zdroj, {"Zeme", "Rok"}, #"prumerne veky", {"Zeme", "Rok"}, "prumerne veky", JoinKind.LeftOuter),
-    #"Rozbalené prumerne veky" = Table.ExpandTableColumn(#"Sloučené dotazy", "prumerne veky", {"Prumerny vek"}, {"Prumerny vek"}),
-    #"Změněný typ" = Table.TransformColumnTypes(#"Rozbalené prumerne veky",{{"Zeme", type text}, {"Rok", Int64.Type}, {"Pocet obyvatel", Int64.Type}, {"Kod meny", type text}, {"Clenska zeme EU", type logical}, {"Prumerny vek", type number}})
-in
-    #"Změněný typ"
