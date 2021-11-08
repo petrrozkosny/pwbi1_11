@@ -1,0 +1,35 @@
+Vizualizujte
+1. Sloupcový graf
+1.1.[Rok]
+1.2. Suma [pocet obyvatel]
+2.  U grafu nastavte možnost podrobné analýzy a na
+ní vizualizujte:
+2.1. Tabulka
+2.1.1. [Zeme]
+2.1.2. suma [Pocet obvyvatel] v danem roce
+2.1.3. suma[Pocet obyvatel] v predchozim roce
+
+2.2. Výsečový graf
+2.2.1. [Zeme]
+2.2.2. suma [Pocet obyvatel] v maximimálním roce (tj. 2019)
+2.3. Vizuál karta s max [Pocet obyvatel] v daném roce
+
+3. Vytvořte novou stránku "Země" a v  ní počítejte:
+3.1. tabulka
+3.1.1. [Zeme]
+3.1.2. Maximální [Pocet obyvatel] v dané zemi
+3.1.3. Maximální [Rok] maximální [Pocet obyvatel] v dané zemi
+
+3.2. Spojnicový graf
+3.2.1. [Rok]
+3.2.2. Suma [Pocet obyvatel] v daném [Rok]
+3.2.3. Suma [Pocet obyvatel] v předchozím [Rok]
+
+3.3. Karta
+3.3.1. Maximální populace za všechny roky a země
+
+4. Nad tabulku z bodu 3 nastavte Popis, a v něm vizualizujte tabulku
+4.1. Rok
+4.2. Suma [Pocet obyvatel]
+Pozn. vizuály na stránce "Země" se vzájemně neovlivňují
+
