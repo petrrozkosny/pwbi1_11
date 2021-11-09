@@ -1,0 +1,20 @@
+pocet obyvatel min rok promenne = 
+
+/*
+Suma obyvatel v minimálním roce ve Švýcarsko
+/
+Suma obyvatel ve všech zemích za minimální rok Švýcarska
+*/
+
+VAR min_rok_svycarsko = 
+MINX(FILTER(data,data[Zeme] = "Svycarsko"),data[Rok])
+VAR obyv_svyc_min_rok = 
+
+SUMX(FILTER(data,data[Rok] = min_rok_svycarsko
+&& data[Zeme] = "Svycarsko"),data[Pocet obyvatel])
+
+VAR obyv_vse_min_rok =
+
+SUMX(FILTER(data,data[Rok] = min_rok_svycarsko),data[Pocet obyvatel])
+
+RETURN obyv_svyc_min_rok &"-"& obyv_vse_min_rok
