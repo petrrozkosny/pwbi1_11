@@ -22,8 +22,8 @@ Do nového souboru
 5.1. Tabulka se sloupci
 5.1.1. Dim datumy Rok
 5.1.2. Max TMAX pro daný rok
-5.1.3. Rozdíl mezi max TMAX pro daný rok a max TMAX v předchozím roce
-5.2. Ve sloupci z bodu 5.1.2. podmíněně vizualizujte nejvyšší hodnotu
+5.1.3. Rozdíl mezi max TMAX pro daný rok a max TMAX v předchozím roce (pozn prosím dopočítat sloupec ROK do tabulky data)
+5.1.4 Ve sloupci z bodu 5.1.2. podmíněně vizualizujte nejvyšší hodnotu
 
 5.2. Spojnicový graf
 5.2.1. dim datumy [Rok]
@@ -36,7 +36,7 @@ Do nového souboru
 5.3.3 Nad graf nastavte popis, viz níže
 
 5.4 Tabulka
-5.4.1 dim zeme[Zeme]
+5.4.1 dim lokality [NAME]
 5.4.2. Max[PRCP]
 5.4.3. Max[PRCP] v max roce
 5.4.4. Max data[DATE] max [PRCP] pro danou dim zeme[Zeme]
@@ -46,31 +46,29 @@ Vytvořte stránku "popis" a v ní vizualizujte (popis bude nad grafem z bodu 5.
 6.1. dim lokality[NAME]
 6.2. max [TMAX]
 
-9. Vytvořte stránku "podrobná analýza", která bude dostupná přes sloupec dim datumy[Rok] a v ní vizualizujte
+7. Vytvořte stránku "podrobná analýza", která bude dostupná přes sloupec dim datumy[Rok] a v ní vizualizujte
+7.1. Průřez nad dim lokality[NAME]
+7.2. Tabulka
+7.2.2. dim datumy[Měsíc]
+7.2.3. suma [PRCP]
 
-9.1. Průřez nad dim lokality[NAME]
+7.3. Tabulka
+7.3.1. dim datumy[Měsíc]
+7.3.2. kumulativní suma [PRCP] pro lokalitu vybranou v bodu 9.1.
 
-9.1. Tabulka
-9.1.1. dim datumy[Měsíc]
-9.1.2. suma [PRCP]
-
-9.2. Tabulka
-9.2.1. dim datumy[Měsíc]
-9.2.2. kumulativní suma [PRCP] pro lokalitu vybranou v bodu 9.1.
-
-9.3. Podrobnou analýzu zpřístupněte přes tlačítko na stránce "report"
+7.4. Podrobnou analýzu zpřístupněte přes tlačítko na stránce "report"
 
 BONUS: 
-10. Vytvořte stránku "analýza" a na ní vizualizujte
+8. Vytvořte stránku "analýza" a na ní vizualizujte
 
-10.1. Selektor s hodnotami:
+8.1. Selektor s hodnotami:
 - predchozi rok
 - vsechny roky
 
-10.2. Spojnicový graf
-10.2.1. dim datumy[Rok]
-10.2.2. max [TMAX]
-10.2.2. Výpočet v závilosti na tom, co si uživatel vybral v selektrou 10.1.:
+8.2. Spojnicový graf
+8.2.1. dim datumy[Rok]
+8.2.2. max [TMAX]
+8.2.3. Výpočet v závilosti na tom, co si uživatel vybral v selektrou 10.1.:
 	- pokud "predchozi rok", tak max[TMAX] vpredchozim roce
 	- pokud "vsechny roky", tak max[TMAX] za vsechny roky
 
