@@ -39,7 +39,7 @@ Do nového souboru
 5.4.1 dim lokality [NAME]
 5.4.2. Max[PRCP]
 5.4.3. Max[PRCP] v max roce
-5.4.4. Max data[DATE] max [PRCP] pro danou dim zeme[Zeme]
+5.4.4. Max data[DATE] max [PRCP] pro danou dim lokality[NAME]
 
 Vytvořte stránku "popis" a v ní vizualizujte (popis bude nad grafem z bodu 5.3)
 6. Tabulka
@@ -54,7 +54,8 @@ Vytvořte stránku "popis" a v ní vizualizujte (popis bude nad grafem z bodu 5.
 
 7.3. Tabulka
 7.3.1. dim datumy[Měsíc]
-7.3.2. kumulativní suma [PRCP] pro lokalitu vybranou v bodu 9.1.
+7.3.2. kumulativní suma [PRCP] pro lokalitu vybranou v bodu 7.1.
+Pozn. pořád chceme respektovat rok, přes který se sem uživatel dostal
 
 7.4. Podrobnou analýzu zpřístupněte přes tlačítko na stránce "report"
 
